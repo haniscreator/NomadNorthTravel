@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
+import 'package:travel_in_chiangmai/widgets/location_selector_row.dart';
+import 'package:travel_in_chiangmai/widgets/notification_icon.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(backgroundColor: kBackgroundColor, appBar: headerParts());
+  }
+
+  AppBar headerParts() {
+    return AppBar(
+      elevation: 0,
+      backgroundColor: Colors.white,
+      automaticallyImplyLeading: false,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: const [
+          LocationSelectorRow(), // ⬅️ Modular location row
+          NotificationIcon(), // ⬅️ Modular notification badge
+        ],
+      ),
+    );
+  }
+}

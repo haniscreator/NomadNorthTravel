@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/onboard_model.dart';
 import 'package:travel_in_chiangmai/pages/travel_home_screen.dart';
+import 'package:flutter/gestures.dart';
+import 'package:travel_in_chiangmai/screens/auth/login_screen.dart';
+import 'package:travel_in_chiangmai/widgets/main_nav.dart';
+
 
 class TravelOnBoardingScreen extends StatefulWidget {
   const TravelOnBoardingScreen({super.key});
@@ -12,6 +17,25 @@ class TravelOnBoardingScreen extends StatefulWidget {
 
 class _TravelOnBoardingScreenState extends State<TravelOnBoardingScreen> {
   int currentIndex = 0;
+  late TapGestureRecognizer _loginTapRecognizer;
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _loginTapRecognizer = TapGestureRecognizer()..onTap = () {
+      Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginScreen()),
+      );
+    };
+  }
+
+  @override
+  void dispose() {
+    _loginTapRecognizer.dispose();
+    super.dispose();
+  }
+
   Widget dotIndicator(int index) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 400),
@@ -54,14 +78,19 @@ class _TravelOnBoardingScreenState extends State<TravelOnBoardingScreen> {
                   children: [
                     const SizedBox(height: 40),
                     GestureDetector(
-                      onTap: () {
+                      onTap: () async {
+                        final prefs = await SharedPreferences.getInstance();
+                        await prefs.setBool('isFirstLaunch', false);
+
                         Navigator.pushAndRemoveUntil(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const TravelHomeScreen(),
-                            ),
-                            (route) => false);
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const MainNav(),
+                          ),
+                          (route) => false,
+                        );
                       },
+
                       child: Visibility(
                         visible: onboarding.length - 1 != currentIndex
                             ? true
@@ -185,10 +214,10 @@ class _TravelOnBoardingScreenState extends State<TravelOnBoardingScreen> {
                             ),
                           ),
                           const SizedBox(height: 30),
-                          const Text.rich(
+                          Text.rich(
                             TextSpan(
                               children: [
-                                TextSpan(
+                                const TextSpan(
                                   text: "already have account? ",
                                   style: TextStyle(
                                     fontSize: 16,
@@ -196,11 +225,12 @@ class _TravelOnBoardingScreenState extends State<TravelOnBoardingScreen> {
                                 ),
                                 TextSpan(
                                   text: "Login",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.blue,
                                     fontWeight: FontWeight.w600,
                                     fontSize: 16,
                                   ),
+                                  recognizer: _loginTapRecognizer,
                                 ),
                               ],
                             ),
