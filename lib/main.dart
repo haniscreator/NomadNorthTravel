@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:travel_in_chiangmai/blocs/location_cubit.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/pages/onboarding_travel.dart';
 import 'widgets/main_nav.dart';
 import 'blocs/auth_cubit.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
       create: (_) => AuthCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Travel in Chiang Mai',
+        title: kAppTitle,
         theme: ThemeData(primarySwatch: Colors.blue),
         home: isFirstLaunch
             ? const TravelOnBoardingScreen()

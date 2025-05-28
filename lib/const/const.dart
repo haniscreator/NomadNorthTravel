@@ -18,3 +18,5 @@ const List<String> kLocationList = [
 
  
 final String kDefaultLocation = kLocationList[0];
+
+const kAppTitle = "Travel far, discover your soul.";
