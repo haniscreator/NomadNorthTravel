@@ -44,7 +44,7 @@ class RecommendPackageSection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       itemCount: recommendPackage.length,
       itemBuilder: (context, index) {
-        return RecomendPackageCard(place: recommendPackage[index]);
+        return RecommendPackageCard(place: recommendPackage[index]);
       },
     ),
   ],
