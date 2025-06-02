@@ -6,6 +6,7 @@ const blueTextColor = Color(0xff035997);
 
 
 const kDummyUsername = "demo";
+const kDummyEmail = "demo@email.com";
 const kDummyPassword = "1234";
 
 const List<String> kLocationList = [
