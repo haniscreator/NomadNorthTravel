@@ -1,10 +1,11 @@
 // main_nav.dart
 
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/pages/profile_screen.dart';
 import 'package:travel_in_chiangmai/screens/home/home_screen.dart';
 import 'package:travel_in_chiangmai/screens/package/travel_package_screen.dart';
 //import 'package:travel_in_chiangmai/screens/home/home_screen.dart';
-import 'package:travel_in_chiangmai/screens/profile/profile_screen.dart';
+
 //import 'package:travel_in_chiangmai/screens/package/travel_package_screen.dart';
 
 class MainNav extends StatefulWidget {
