@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:travel_in_chiangmai/models/place_model.dart';
 
 class OverviewTab extends StatelessWidget {
-  final Places place;
+  //final Places place;
+  final PopularPlaces place; 
   final int currentIndex;
 
   const OverviewTab({

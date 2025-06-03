@@ -44,6 +44,8 @@ dependencies:
   cached_network_image: ^3.3.1
   shared_preferences: ^2.5.3
   smooth_page_indicator: ^1.1.0
+  flutter_swiper_view: ^1.1.8
+  dotted_line: ^3.2.2
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +72,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/doi_suthet/
+    - assets/images/old_city/
+    - assets/images/chaloem_park/
+    - assets/images/mae_kam_pong/
+    - assets/images/nimman_road/
+    - assets/images/night_market/
+    - assets/images/gallery/
+    - assets/images/packages/
     - assets/lotties/  
 
 

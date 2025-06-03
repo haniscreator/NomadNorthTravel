@@ -131,7 +131,7 @@ class ProfileScreen extends StatelessWidget {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image.asset(
-                      'assets/images/gallery_${index + 1}.JPG',
+                      'assets/images/gallery/${index + 1}.jpg',
                       fit: BoxFit.cover,
                     ),
                   );

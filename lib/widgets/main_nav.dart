@@ -1,16 +1,13 @@
-// main_nav.dart
-
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/pages/home_page.dart';
+import 'package:travel_in_chiangmai/pages/package_home_screen.dart';
 import 'package:travel_in_chiangmai/pages/profile_screen.dart';
-import 'package:travel_in_chiangmai/screens/home/home_screen.dart';
-import 'package:travel_in_chiangmai/screens/package/travel_package_screen.dart';
-//import 'package:travel_in_chiangmai/screens/home/home_screen.dart';
 
-//import 'package:travel_in_chiangmai/screens/package/travel_package_screen.dart';
+
 
 class MainNav extends StatefulWidget {
   final int selectedIndex;
-  const MainNav({super.key, this.selectedIndex = 0}); // <--- default is home tab
+  const MainNav({super.key, this.selectedIndex = 0}); 
 
   @override
   State<MainNav> createState() => _MainNavState();
@@ -20,15 +17,15 @@ class _MainNavState extends State<MainNav> {
   late int _currentIndex;
 
   final List<Widget> _screens = [
-    HomeScreen(),
-    TravelPackageScreen(),
+    HomePage(),
+    PackageHomeScreen(),
     ProfileScreen(),
   ];
 
   @override
   void initState() {
     super.initState();
-    _currentIndex = widget.selectedIndex; // <--- use passed index
+    _currentIndex = widget.selectedIndex; 
   }
 
   @override

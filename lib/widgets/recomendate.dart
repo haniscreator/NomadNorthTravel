@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
+import 'package:travel_in_chiangmai/models/place_model.dart';
 import 'package:travel_in_chiangmai/models/travel_model.dart';
 
 class Recomendate extends StatelessWidget {
-  final TravelDestination destination;
+  //final TravelDestination destination;
+  final PopularPlaces destination;
   const Recomendate({super.key, required this.destination});
 
   @override
@@ -27,7 +29,7 @@ class Recomendate extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: NetworkImage(
+                image: AssetImage(
                   destination.image![0],
                 ),
               ),

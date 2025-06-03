@@ -3,7 +3,8 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../models/place_model.dart';
 
 class PlaceImageCarousel extends StatelessWidget {
-  final Places place;
+  //final Places place;
+  final PopularPlaces place;
   final int currentIndex;
   final PageController pageController;
   final ValueChanged<int> onPageChanged;
@@ -39,7 +40,7 @@ class PlaceImageCarousel extends StatelessWidget {
                     children: [
                       Hero(
                         tag: '${place.name}_image_$index',
-                        child: Image.network(
+                        child: Image.asset(
                           images[index],
                           fit: BoxFit.cover,
                         ),

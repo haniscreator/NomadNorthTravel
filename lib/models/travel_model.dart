@@ -2,13 +2,13 @@ import 'dart:math';
 
 Random random = Random();
 
-class TravelDestination {
+class TravelDestination1 {
   final int id, price, review;
   final List<String>? image;
   final String name, description, category, location;
   final double rate;
 
-  TravelDestination({
+  TravelDestination1({
     required this.name,
     required this.price,
     required this.id,
@@ -21,8 +21,8 @@ class TravelDestination {
   });
 }
 
-List<TravelDestination> myDestination = [
-  TravelDestination(
+List<TravelDestination1> myDestination = [
+  TravelDestination1(
     id: 2,
     name: "Mt.Everest",
     category: 'popular',
@@ -38,7 +38,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.9,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 7,
     price: 100,
     name: "Pashupatinath Temple",
@@ -54,7 +54,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.8,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 3,
     name: "Lubini Temple",
     review: random.nextInt(300) + 25,
@@ -70,7 +70,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.9,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 8,
     name: "Rara Lake",
     review: random.nextInt(300) + 25,
@@ -85,7 +85,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.5,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 1,
     name: "Mustang",
     review: random.nextInt(300) + 25,
@@ -101,7 +101,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.6,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 9,
     name: "Karnali River",
     review: random.nextInt(300) + 25,
@@ -117,7 +117,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.7,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 12,
     name: "Mountain Range",
     category: "recomend",
@@ -133,7 +133,7 @@ List<TravelDestination> myDestination = [
     description: description,
     rate: 4.8,
   ),
-  TravelDestination(
+  TravelDestination1(
     id: 14,
     name: "Kathmandu Durbar ",
     review: random.nextInt(300) + 25,

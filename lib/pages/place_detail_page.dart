@@ -9,7 +9,8 @@ import 'package:travel_in_chiangmai/widgets/review_tab.dart';
 // Make sure to import your custom widget
 
 class PlaceDetailPage extends StatefulWidget {
-  final Places place;
+  //final Places place;
+  final PopularPlaces place;
   final int initialIndex;
 
   const PlaceDetailPage({

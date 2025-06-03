@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/onboard_model.dart';
-import 'package:travel_in_chiangmai/pages/travel_home_screen.dart';
+
 import 'package:flutter/gestures.dart';
+import 'package:travel_in_chiangmai/pages/home_page.dart';
 import 'package:travel_in_chiangmai/screens/auth/login_screen.dart';
 import 'package:travel_in_chiangmai/widgets/main_nav.dart';
 
@@ -172,7 +173,7 @@ class _TravelOnBoardingScreenState extends State<TravelOnBoardingScreen> {
                               Navigator.pushAndRemoveUntil(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (_) => const TravelHomeScreen(),
+                                    builder: (_) => const HomePage(),
                                   ),
                                   (route) => false);
                             },
