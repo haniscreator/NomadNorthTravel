@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import '../models/data_model.dart';
 
-
-class ReviewTab extends StatelessWidget {
-  const ReviewTab({super.key});
+class DetailReviewTab extends StatelessWidget {
+  const DetailReviewTab({super.key});
 
 
   @override
@@ -14,17 +14,21 @@ class ReviewTab extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text("User Reviews:", style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 12),
-            ReviewTile(
-              name: "John Doe",
-              comment: "Amazing experience, loved the view!",
+            
+            Column(
+              children: List.generate(userReviews.length,(index) {
+                final review = userReviews[index];
+                return ReviewTile(
+                  name: review.name, 
+                  comment: review.comment, 
+                  photo: review.photo,
+                  );
+              }),
             ),
-            ReviewTile(
-              name: "Jane Smith",
-              comment: "Comfortable and beautiful location!",
-            ),
+
           ],
         ),
       ),
@@ -38,17 +42,19 @@ class ReviewTile extends StatelessWidget {
   
   final String name;
   final String comment;
+  final String photo;
 
   const ReviewTile({
     super.key,
     required this.name,
-    required this.comment
+    required this.comment,
+    required this.photo,
   });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(child: Icon(Icons.person)),
+      leading: CircleAvatar(backgroundImage: AssetImage(photo)),
       title: Text(name),
       subtitle: Text(comment),
     );

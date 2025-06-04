@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/widgets/main_nav.dart';
-import '../../blocs/auth_cubit.dart';
+import '../blocs/auth_cubit.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController(text: 'demo@email.com');
   final TextEditingController passwordController = TextEditingController(text: '1234');
   String? errorMessage;

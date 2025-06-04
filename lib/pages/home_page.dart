@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/widgets/home_location_dropdown.dart';
 
-import 'package:travel_in_chiangmai/widgets/notification_icon.dart';
+import 'package:travel_in_chiangmai/widgets/home_notification_icon.dart';
 import 'package:travel_in_chiangmai/widgets/home_popular_place_section.dart';
 import 'package:travel_in_chiangmai/widgets/home_recommend_package_section.dart';
 
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: const [
           HomeLocationDropdown(), // ⬅️ Modular location row
-          NotificationIcon(), // ⬅️ Modular notification badge
+          HomeNotificationIcon(), // ⬅️ Modular notification badge
         ],
       ),
     );

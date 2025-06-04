@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../models/place_model.dart';
+import 'package:travel_in_chiangmai/models/data_model.dart';
 
-class PlaceImageCarousel extends StatelessWidget {
+
+class DetailPlaceImageCarousel extends StatelessWidget {
   //final Places place;
   final PopularPlaces place;
   final int currentIndex;
   final PageController pageController;
   final ValueChanged<int> onPageChanged;
 
-  const PlaceImageCarousel({
+  const DetailPlaceImageCarousel({
     super.key,
     required this.place,
     required this.currentIndex,

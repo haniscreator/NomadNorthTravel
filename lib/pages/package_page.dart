@@ -4,14 +4,14 @@ import 'package:dotted_line/dotted_line.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/destination_model.dart';
 
-class PackageHomeScreen extends StatefulWidget {
-  const PackageHomeScreen({super.key});
+class PackagePage extends StatefulWidget {
+  const PackagePage({super.key});
 
   @override
-  State<PackageHomeScreen> createState() => _PackageHomeScreenState();
+  State<PackagePage> createState() => _PackagePageState();
 }
 
-class _PackageHomeScreenState extends State<PackageHomeScreen> {
+class _PackagePageState extends State<PackagePage> {
   String category = 'Popular';
   int selectedIndex = 0;
   List<Destination> myDestination = destinations;

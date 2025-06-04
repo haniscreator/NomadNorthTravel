@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:travel_in_chiangmai/models/place_model.dart';
-import 'package:travel_in_chiangmai/widgets/overview_tab.dart';
-import 'package:travel_in_chiangmai/widgets/place_bottom_bar.dart';
-import 'package:travel_in_chiangmai/widgets/place_image_carousel.dart';
-import 'package:travel_in_chiangmai/widgets/place_tab_bar.dart';
-import 'package:travel_in_chiangmai/widgets/review_tab.dart';
+import 'package:travel_in_chiangmai/models/data_model.dart';
+
+import 'package:travel_in_chiangmai/widgets/detail_bottom_bar.dart';
+import 'package:travel_in_chiangmai/widgets/detail_overview_tab.dart';
+
+import 'package:travel_in_chiangmai/widgets/detail_place_image_carousel.dart';
+import 'package:travel_in_chiangmai/widgets/detail_tab_bar.dart';
+import 'package:travel_in_chiangmai/widgets/detail_review_tab.dart';
 
 // Make sure to import your custom widget
 
@@ -58,7 +60,7 @@ class _PlaceDetailPageState extends State<PlaceDetailPage>
           color: Colors.white,
           child: SizedBox(
             height: 72,
-            child: PlaceBottomBar(price: widget.place.price.toString()),
+            child: DetailBottomBar(price: widget.place.price.toString()),
           ),
         ),
       ),
@@ -83,7 +85,7 @@ class _PlaceDetailPageState extends State<PlaceDetailPage>
                 title: Text(widget.place.name),
               ),
               SliverToBoxAdapter(
-                child: PlaceImageCarousel(
+                child: DetailPlaceImageCarousel(
                   place: widget.place,
                   pageController: _pageController,
                   currentIndex: _currentIndex,
@@ -94,13 +96,13 @@ class _PlaceDetailPageState extends State<PlaceDetailPage>
                   },
                 ),
               ),
-              PlaceTabBar(tabController: _tabController),
+              DetailPlaceTabBar(tabController: _tabController),
             ],
         body: TabBarView(
           controller: _tabController,
           children: [
-            OverviewTab(place: widget.place, currentIndex: _currentIndex),
-            const ReviewTab(),
+            DetailOverviewTab(place: widget.place, currentIndex: _currentIndex),
+            const DetailReviewTab(),
           ],
         ),
       ),

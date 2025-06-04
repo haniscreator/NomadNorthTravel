@@ -5,7 +5,7 @@ import 'package:travel_in_chiangmai/models/onboard_model.dart';
 
 import 'package:flutter/gestures.dart';
 import 'package:travel_in_chiangmai/pages/home_page.dart';
-import 'package:travel_in_chiangmai/screens/auth/login_screen.dart';
+import 'package:travel_in_chiangmai/pages/login_page.dart';
 import 'package:travel_in_chiangmai/widgets/main_nav.dart';
 
 
@@ -26,7 +26,7 @@ class _TravelOnBoardingScreenState extends State<TravelOnBoardingScreen> {
     // TODO: implement initState
     super.initState();
     _loginTapRecognizer = TapGestureRecognizer()..onTap = () {
-      Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginScreen()),
+      Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginPage()),
       );
     };
   }

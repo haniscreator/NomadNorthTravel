@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travel_in_chiangmai/models/place_model.dart';
+import 'package:travel_in_chiangmai/models/data_model.dart';
+
 import 'package:travel_in_chiangmai/pages/place_detail_page.dart';
 
 class HomePopularPlaceCard extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_in_chiangmai/pages/home_page.dart';
-import 'package:travel_in_chiangmai/pages/package_home_screen.dart';
-import 'package:travel_in_chiangmai/pages/profile_screen.dart';
+import 'package:travel_in_chiangmai/pages/package_page.dart';
+import 'package:travel_in_chiangmai/pages/profile_page.dart';
 
 
 
@@ -18,8 +18,8 @@ class _MainNavState extends State<MainNav> {
 
   final List<Widget> _screens = [
     HomePage(),
-    PackageHomeScreen(),
-    ProfileScreen(),
+    PackagePage(),
+    ProfilePage(),
   ];
 
   @override

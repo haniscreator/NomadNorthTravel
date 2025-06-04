@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:travel_in_chiangmai/models/place_model.dart';
+import 'package:travel_in_chiangmai/models/data_model.dart';
 
-class OverviewTab extends StatelessWidget {
+
+class DetailOverviewTab extends StatelessWidget {
   //final Places place;
   final PopularPlaces place; 
   final int currentIndex;
 
-  const OverviewTab({
+  const DetailOverviewTab({
     super.key,
     required this.place,
     required this.currentIndex,
@@ -31,7 +32,7 @@ class OverviewTab extends StatelessWidget {
                   SizedBox(height: 12),
                   Text(
                     place.description,
-                    style: TextStyle(fontSize: 14, color: Colors.grey),
+                    style: TextStyle(fontSize: 14),
                   ),
                 ],
               ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class PlaceBottomBar extends StatelessWidget {
+class DetailBottomBar extends StatelessWidget {
   final String price;
 
-  const PlaceBottomBar({super.key, required this.price});
+  const DetailBottomBar({super.key, required this.price});
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +25,11 @@ class PlaceBottomBar extends StatelessWidget {
           ElevatedButton.icon(
             onPressed: () {},
 
-            icon: Icon(Icons.shopping_cart),
-            label: Text("Add to Cart"),
+            icon: Icon(Icons.shopping_cart, color: Colors.white,),
+            label: Text("Add to Cart", style: TextStyle(color: Colors.white)),
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-              backgroundColor: Colors.black,
+              backgroundColor: Colors.teal,
             ),
           ),
         ],

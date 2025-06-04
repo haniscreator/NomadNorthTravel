@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class NotificationIcon extends StatelessWidget {
-  const NotificationIcon({super.key});
+class HomeNotificationIcon extends StatelessWidget {
+  const HomeNotificationIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
