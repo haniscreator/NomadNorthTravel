@@ -81,6 +81,7 @@ flutter:
     - assets/images/gallery/
     - assets/images/packages/
     - assets/images/reviews/
+    - assets/images/onboarding/
     - assets/lotties/  
 
 

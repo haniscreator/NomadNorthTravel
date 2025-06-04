@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:travel_in_chiangmai/blocs/location_cubit.dart';
-import 'package:travel_in_chiangmai/const/const.dart';
+import 'package:travel_in_chiangmai/models/data_model.dart';
+
 
 void showLocationDropdown(BuildContext context) {
   showModalBottomSheet(
@@ -12,14 +13,14 @@ void showLocationDropdown(BuildContext context) {
     builder: (_) {
       return ListView.separated(
         padding: const EdgeInsets.all(16),
-        itemCount: kLocationList.length,
+        itemCount: cityList.length,
         separatorBuilder: (_, __) => const Divider(),
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(kLocationList[index]),
+            title: Text(cityList[index]),
             onTap: () {
               Navigator.pop(context);
-              context.read<LocationCubit>().selectedLocation(kLocationList[index]);
+              context.read<LocationCubit>().selectedLocation(cityList[index]);
             },
           );
         },

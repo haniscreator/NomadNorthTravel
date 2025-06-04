@@ -13,15 +13,7 @@ const kDummyUsername = "demo";
 const kDummyEmail = "demo@email.com";
 const kDummyPassword = "1234";
 
-const List<String> kLocationList = [
-  'Chiang Mai',
-  'Bangkok',
-  'Phuket',
-  'Pai',
-  'Chiang Rai',
-];
 
- 
-final String kDefaultLocation = kLocationList[0];
 
-const kAppTitle = "Travel far, discover your soul.";
+
+const isShowDescOnboarding = false;

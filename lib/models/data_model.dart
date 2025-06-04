@@ -290,3 +290,63 @@ List<Review> userReviews = [
     photo: 'assets/images/reviews/user5.png',
   ),
 ];
+
+
+////  //// /// /// ///
+/// For Onboarding ///
+////  //// /// /// ///
+
+class OnboardModel {
+  String image, title, description;
+
+  OnboardModel({
+    required this.image, 
+    required this.title,
+    required this.description
+    });
+}
+
+List<OnboardModel> onboarding = [
+   OnboardModel(
+    image: 'assets/images/onboarding/8.jpg',
+    title: 'Let the journey begin',
+    description: 'Travel is the only thing you buy that makes you richer. '
+  ),
+  OnboardModel(
+    image: 'assets/images/onboarding/1.jpg',
+    title: "Adventure is out there",
+    description: 'Life begins at the end of your comfort zone.'
+  ),
+  OnboardModel(
+    image: 'assets/images/onboarding/3.jpg',
+    title: 'Roam far, live free',
+    description: 'Take only memories, leave only footprints behind.'
+  ),
+  OnboardModel(
+    image: 'assets/images/onboarding/7.jpg',
+    title: 'Find joy in the journey',
+    description: 'Jobs fill your pocket, but adventures fill your soul.'
+  ),
+  OnboardModel(
+    image: 'assets/images/onboarding/12.jpg',
+    title: 'Escape the ordinary',
+    description: 'The world is wide, and I want to make memories in it.'
+  ),
+
+  
+];
+
+
+////  //// /// /// 
+/// City List  ///
+////  //// /// ///
+
+const List<String> cityList = [
+  'Chiang Mai',
+  'Bangkok',
+  'Phuket',
+  'Pai',
+  'Chiang Rai',
+];
+
+String defaultCity = cityList[0];
