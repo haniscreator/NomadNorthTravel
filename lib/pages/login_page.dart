@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
+import 'package:travel_in_chiangmai/pages/register_page.dart';
 import 'package:travel_in_chiangmai/widgets/main_nav.dart';
 import '../blocs/auth_cubit.dart';
 
@@ -149,7 +150,12 @@ Widget build(BuildContext context) {
                     const SizedBox(height: 20),
                     const Text("Don’t have an Account? "),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => const RegisterPage()),
+                        );  
+                      },
                       child: const Text("Sign up", style: TextStyle(color: Colors.teal)),
                     ),
                     const SizedBox(height: 30),

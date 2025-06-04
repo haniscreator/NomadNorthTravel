@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
-import 'package:travel_in_chiangmai/models/destination_model.dart';
+import 'package:travel_in_chiangmai/models/data_model.dart';
+
 
 class PackagePage extends StatefulWidget {
   const PackagePage({super.key});
@@ -14,7 +15,7 @@ class PackagePage extends StatefulWidget {
 class _PackagePageState extends State<PackagePage> {
   String category = 'Popular';
   int selectedIndex = 0;
-  List<Destination> myDestination = destinations;
+  List<Package> packageData = packages;
   List<IconData> icons = [
     Icons.home_rounded,
     Icons.location_on_rounded,
@@ -50,14 +51,14 @@ class _PackagePageState extends State<PackagePage> {
       height: size.height * 0.52,
       padding: const EdgeInsets.only(top: 10, bottom: 10, right: 60, left: 20),
       child: Swiper(
-        itemCount: myDestination.length,
+        itemCount: packageData.length,
         layout: SwiperLayout.STACK,
         itemWidth: size.width * 0.7,
         axisDirection: AxisDirection.right,
         onTap: (index) {},
         loop: true,
         itemBuilder: (context, index) {
-          final travel = myDestination[index];
+          final travel = packageData[index];
           return ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Container(
@@ -230,8 +231,8 @@ class _PackagePageState extends State<PackagePage> {
                   setState(() {
                     category = categories[index];
                     category == "Popular"
-                        ? myDestination = destinations
-                        : myDestination = destinations
+                        ? packageData = packages
+                        : packageData = packages
                             .where(
                               (element) =>
                                   element.category!.toLowerCase() ==
