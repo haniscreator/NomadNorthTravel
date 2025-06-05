@@ -49,15 +49,15 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       const CircleAvatar(
                         radius: 50,
-                        backgroundImage: AssetImage('assets/images/avatar.png'),
+                        backgroundImage: AssetImage('assets/images/avatar.jpg'),
                       ),
                       const SizedBox(height: 12),
                       const Text(
-                        'Sarah Mrylin',
+                        'P.Han',
                         style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                       ),
                       const Text(
-                        'Photographer',
+                        'Digital Nomad',
                         style: TextStyle(color: Colors.grey),
                       ),
                       const SizedBox(height: 20),

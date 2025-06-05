@@ -1,16 +1,53 @@
-# travel_in_chiangmai
+# NomadNorthTravel
 
-A new Flutter project.
+**NomadNorthTravel** is a Flutter UI project built for study and practice purposes. The app is a conceptual travel companion focused on exploring the beauty, culture, and nature of Chiang Mai, Thailand.
 
-## Getting Started
+## 📌 Purpose
 
-This project is a starting point for a Flutter application.
+This project was created to:
 
-A few resources to get you started if this is your first Flutter project:
+- Practice Flutter layout and UI design
+- Explore stateful and stateless widgets
+- Work with image assets and JSON-like data
+- Build a concept travel app with a clean and modern design
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Features (UI Only)
+- Onboarding Flow
+- Login
+- Register 
+- Profile with gallery
+- Popular destination listings ( Horizontal Scroll )
+- Recommended travel package ( Vertical Scroll )
+- All travel packages ( Card flip )
+- Custom UI components
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+> Note: This is a front-end/UI-focused project and does not include backend or real-time data fetching.
+
+## 📁 Assets
+
+All images are stored locally under the `assets/images/` directory and referenced in `pubspec.yaml`.
+
+## 📷 Screenshots
+
+| Screen 1 | Screen 2 | Screen 3 |
+|----------|----------|----------|
+| ![](assets/screenshots/screen1.png) | ![](assets/screenshots/screen2.png) | ![](assets/screenshots/screen3.png) |
+| ![](assets/screenshots/screen4.png) | ![](assets/screenshots/screen5.png) | ![](assets/screenshots/screen6.png) |
+| ![](assets/screenshots/screen7.png) | ![](assets/screenshots/screen8.png) | ![](assets/screenshots/screen9.png) |
+
+
+## 💡 Inspiration
+
+The app is inspired by the idea of digital nomad travel in Northern Thailand — peaceful mountains, rich culture, and eco-tourism experiences.
+
+## ✅ Credit
+I got some design inspiration and reference ideas from those videos, but I took a different approach in structuring the widgets.
+- https://www.youtube.com/watch?v=Tde4-NcL3GE&t
+- https://www.youtube.com/watch?v=XHNrTK2UANs&t
+
+
+---
+
+Feel free to fork, explore, or build upon this for your own learning.
