@@ -30,7 +30,8 @@ This project was created to:
 All images are stored locally under the `assets/images/` directory and referenced in `pubspec.yaml`.
 
 ## 📷 Screenshots
-
+|  |  |  |
+|----------|----------|----------|
 | ![](assets/screenshots/screen7.png) | ![](assets/screenshots/screen8.png) | ![](assets/screenshots/screen9.png) |
 
 
