@@ -34,10 +34,8 @@ All images are stored locally under the `assets/images/` directory and reference
 |----------|----------|----------|
 | ![](assets/screenshots/screen1.png) | ![](assets/screenshots/screen2.png) | ![](assets/screenshots/screen2.png) |
 |  |  |  |
-|----------|----------|----------|
 | ![](assets/screenshots/screen4.png) | ![](assets/screenshots/screen5.png) | ![](assets/screenshots/screen6.png) |
 |  |  |  |
-|----------|----------|----------|
 | ![](assets/screenshots/screen7.png) | ![](assets/screenshots/screen8.png) | ![](assets/screenshots/screen9.png) |
 
 
