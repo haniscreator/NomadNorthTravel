@@ -3,7 +3,7 @@ import 'package:travel_in_chiangmai/models/data_model.dart';
 
       
 class HomeRecommendPackageCard extends StatelessWidget {
-  final RecommendPackage package;
+  final AllPackages package;
 
   const HomeRecommendPackageCard(
     {

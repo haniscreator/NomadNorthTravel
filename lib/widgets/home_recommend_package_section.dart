@@ -11,7 +11,7 @@ class HomeRecommendPackageSection extends StatelessWidget {
   Widget build(BuildContext context) {
     
      final recommendPackage = allPackage
-        .where((place) => place.category == 'recommend')
+        .where((place) => place.category == 'Recommend')
         .toList();
 
     

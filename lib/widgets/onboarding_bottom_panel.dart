@@ -45,13 +45,13 @@ class OnboardingBottomPanel extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                       boxShadow: const [
                         BoxShadow(
-                          color: Colors.black12,
+                          color: Colors.black26,
                           offset: Offset(0, 5),
                           spreadRadius: 10,
                           blurRadius: 10,
                         ),
                       ],
-                      color: kButtonColor,
+                      color: Colors.teal,
                     ),
                     child: const Center(
                       child: Row(
