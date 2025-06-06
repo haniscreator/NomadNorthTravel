@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 
 class PackageSearchBar extends StatelessWidget {
   const PackageSearchBar({super.key});
@@ -14,8 +15,8 @@ class PackageSearchBar extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: "Search Package",
                 hintStyle: const TextStyle(
-                  fontSize: 15,
-                  color: Colors.black26,
+                  fontSize: normalTextFontSize,
+                  color: commonSuperLightBlackColor,
                 ),
                 prefixIcon: const Icon(Icons.search, size: 30),
                 filled: true,
@@ -33,7 +34,7 @@ class PackageSearchBar extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              color: Colors.teal,
+              color: primaryBackgroundColor,
             ),
             child: const Icon(
               Icons.tune,

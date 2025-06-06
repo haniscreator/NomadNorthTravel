@@ -20,9 +20,9 @@ class _PackagePageState extends State<PackagePage> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: kBackgroundColorPackage,
+      backgroundColor: pageBackgroundColor,
       appBar: AppBar(
-        title: const Text('Packages'),
+        title: const Text('Packages', style: TextStyle(fontSize: sectionTitleFontSize, color:commonBlackColor ),),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,

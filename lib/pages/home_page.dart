@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
         
     return Scaffold(
-        backgroundColor: kBackgroundColor, 
+        backgroundColor: pageBackgroundColor, 
         appBar: headerParts(),
 
         body: SingleChildScrollView(

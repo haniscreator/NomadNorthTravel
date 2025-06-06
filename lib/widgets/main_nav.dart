@@ -32,19 +32,32 @@ class _MainNavState extends State<MainNav> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _screens[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (value) {
-          setState(() {
-            _currentIndex = value;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.card_travel), label: 'Packages'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-        ],
-      ),
+    bottomNavigationBar: BottomNavigationBar(
+  currentIndex: _currentIndex,
+  onTap: (value) {
+    setState(() {
+      _currentIndex = value;
+    });
+  },
+  selectedItemColor: Colors.teal,           // 👈 Selected icon and text color
+  unselectedItemColor: Colors.grey,         // 👈 Unselected icon and text color
+  selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold), // Optional
+  items: const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.card_travel),
+      label: 'Packages',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: 'Profile',
+    ),
+  ],
+),
+
     );
   }
 }

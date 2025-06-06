@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -54,11 +55,11 @@ class ProfilePage extends StatelessWidget {
                       const SizedBox(height: 12),
                       const Text(
                         'P.Han',
-                        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: formSubTitleFontSize, fontWeight: textFontWeight),
                       ),
                       const Text(
                         'Digital Nomad',
-                        style: TextStyle(color: Colors.grey),
+                        style: TextStyle(fontSize: normalTextFontSize, color: commonLightBlackColor),
                       ),
                       const SizedBox(height: 20),
                       Row(
@@ -84,12 +85,12 @@ class ProfilePage extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.teal,
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30),
+                                borderRadius: BorderRadius.circular(10),
                               ),
                             ),
                             child: const Text(
                               'Follow',
-                              style: TextStyle(fontSize: 16, color: Colors.white),
+                              style: TextStyle(fontSize: normalTextFontSize, color: commonWhiteColor),
                             ),
                           ),
                         ),
@@ -104,12 +105,12 @@ class ProfilePage extends StatelessWidget {
 
           // Gallery section title
           SliverPadding(
-            padding: const EdgeInsets.fromLTRB(16, 240, 16, 0), // push content below avatar area
+            padding: const EdgeInsets.fromLTRB(16, 250, 16, 0), // push content below avatar area
             sliver: SliverList(
               delegate: SliverChildListDelegate([
                 const Text(
                   "Gallery",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: sectionTitleFontSize, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 16),
               ]),

@@ -53,23 +53,23 @@ class PackageCardSwiper extends StatelessWidget {
                             Text(
                               travel.name!,
                               style: const TextStyle(
-                                fontSize: 20,
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
+                                fontSize: formSubTitleFontSize,
+                                color: commonBlackColor,
+                                fontWeight: textFontWeight,
                               ),
                             ),
                             Row(
                               children: [
                                 Icon(
                                   Icons.location_on_outlined,
-                                  color: Colors.blue[300],
+                                  color: commonLightBlackColor,
                                   size: 14,
                                 ),
                                 Text(
                                   travel.location!,
                                   style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.blue[300],
+                                    fontSize: smallTextFontSize,
+                                    color: commonLightBlackColor,
                                   ),
                                 ),
                               ],
@@ -130,17 +130,18 @@ class PackageCardSwiper extends StatelessWidget {
                               TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: "\$${travel.price} /",
+                                    text: "\$${travel.price} ",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      color: Colors.black.withOpacity(0.4),
+                                      fontSize: cardTitleFontSize,
+                                      fontWeight: textFontWeight,
+                                      color: primaryBackgroundColor,
                                     ),
                                   ),
                                   TextSpan(
-                                    text: "Person",
+                                    text: "/ Person",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      color: Colors.black.withOpacity(0.8),
+                                      fontSize: smallTextFontSize,
+                                      color: commonLightBlackColor,
                                     ),
                                   ),
                                 ],
@@ -151,7 +152,7 @@ class PackageCardSwiper extends StatelessWidget {
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: Colors.blue.shade50,
+                                color: textLinkColor,
                               ),
                               child: const Icon(
                                 Icons.bookmark_outline,
