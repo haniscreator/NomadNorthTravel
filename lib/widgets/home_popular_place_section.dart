@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/data_model.dart';
 import 'package:travel_in_chiangmai/widgets/home_popular_place_card.dart';
 
@@ -25,13 +26,13 @@ class HomePopularPlaceSection extends StatelessWidget {
               Text(
                 "Popular Places",
                 style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black),
+                    fontSize: sectionTitleFontSize,
+                    fontWeight: textFontWeight,
+                    color: commonBlackColor),
               ),
               Text(
                 "See All",
-                style: TextStyle(fontSize: 14, color: Colors.blue),
+                style: TextStyle(fontSize: smallTextFontSize, color: textLinkColor),
               ),
             ],
           ),

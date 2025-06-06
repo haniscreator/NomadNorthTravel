@@ -73,8 +73,8 @@ Widget build(BuildContext context) {
                 child: Text(
                   'Sign in',
                   style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: formTitleFontSize,
+                    fontWeight: textFontWeight,
                   ),
                 ),
               ),
@@ -87,12 +87,16 @@ Widget build(BuildContext context) {
                   children: [
                     TextField(
                       controller: emailController,
+                      style: const TextStyle(
+                        fontSize: normalTextFontSize, 
+                      ),
                       decoration: const InputDecoration(
                         prefixIcon: Icon(Icons.email_outlined),
                         labelText: 'Email',
                       ),
+                    
                     ),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: normalTextFontSize),
                     TextField(
                       controller: passwordController,
                       obscureText: true,
@@ -113,18 +117,26 @@ Widget build(BuildContext context) {
                           },
                           fillColor: WidgetStateProperty.resolveWith<Color>((Set<WidgetState> states) {
                             if (states.contains(WidgetState.selected)) {
-                              return Colors.teal;
+                              return commonBlackColor;
                             }
                             return Colors.grey;
                           }),
                         ),
-                        const Text("Remember Me"),
+                        const Text("Remember Me",
+                        style: TextStyle(
+                          fontSize: normalTextFontSize, 
+                        ),
+                        ),
                         const Spacer(),
                         TextButton(
                           onPressed: () {},
                           child: const Text(
                             "Forgot Password?",
-                            style: TextStyle(color: Colors.grey),
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: normalTextFontSize, 
+                                fontWeight: textFontWeight,
+                              ),
                           ),
                         ),
                       ],
@@ -141,14 +153,26 @@ Widget build(BuildContext context) {
                       child: ElevatedButton(
                         onPressed: handleLogin,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.teal,
+                          backgroundColor: primaryBackgroundColor,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         ),
-                        child: const Text("Login", style: TextStyle(fontSize: 16, color: Colors.white)),
+                        child: const Text(
+                          "Login", 
+                          style: TextStyle(
+                            fontSize: normalTextFontSize, 
+                            fontWeight: textFontWeight,
+                            color: Colors.white
+                          )),
                       ),
                     ),
                     const SizedBox(height: 20),
-                    const Text("Don’t have an Account? "),
+                    const Text("Don’t have an Account?",
+                      style: TextStyle(
+                        fontSize: normalTextFontSize, 
+                        //fontWeight: textFontWeight,
+                        //color: Colors.white
+                      )
+                    ),
                     TextButton(
                       onPressed: () {
                         Navigator.push(
@@ -156,7 +180,7 @@ Widget build(BuildContext context) {
                           MaterialPageRoute(builder: (_) => const RegisterPage()),
                         );  
                       },
-                      child: const Text("Sign up", style: TextStyle(color: Colors.teal)),
+                      child: const Text("Sign up", style: TextStyle(color: textLinkColor)),
                     ),
                     const SizedBox(height: 30),
                   ],

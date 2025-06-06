@@ -9,6 +9,8 @@ const blue = Colors.blue;
 const lightblue = Color(0xff84daf3);
 const primaryColor = Color(0xfffbfcff);
 
+const themeColor1 = Color(0xFF82C0D0);
+
 
 const kDummyUsername = "demo";
 const kDummyEmail = "demo@email.com";
@@ -18,3 +20,20 @@ const kDummyPassword = "1234";
 
 
 const isShowDescOnboarding = false;
+
+
+const primaryBackgroundColor = Color(0xFF26A69A); //Colors.teal[400]
+const textLinkColor = Colors.blue; 
+const textFontWeight = FontWeight.w600;
+
+const double smallTextFontSize = 14;
+const double normalTextFontSize = 16;
+const double formTitleFontSize = 28;
+const double sectionTitleFontSize = 20;
+const double cardTitleFontSize = 18;
+
+const Color commonWhiteColor = Colors.white;
+const Color commonAmberColor = Colors.amber;
+const Color commonBlackColor = Colors.black87;
+const Color commonLightBlackColor = Colors.black54;
+

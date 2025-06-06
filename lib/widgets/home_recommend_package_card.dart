@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/data_model.dart';
 
       
@@ -36,8 +37,8 @@ class HomeRecommendPackageCard extends StatelessWidget {
           ClipRRect(
             child: Image.asset(
               package.image?.first ?? '',
-              width: 80,
-              height: 80,
+              width: 90,
+              height: 90,
               fit: BoxFit.cover,
             ),
           ),
@@ -51,7 +52,7 @@ class HomeRecommendPackageCard extends StatelessWidget {
                 Text(
                   package.name,
                   style: TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 16
+                    fontWeight: textFontWeight, fontSize: normalTextFontSize
                   ),
                 ),
 
@@ -61,14 +62,14 @@ class HomeRecommendPackageCard extends StatelessWidget {
                   children: [
                     //location icon + location 
                     Icon(
-                      Icons.location_on, size: 16, color: Colors.grey,
+                      Icons.location_on, size: 16, color:commonLightBlackColor,
                     ),
                     SizedBox(width: 4),
 
                     Text(
                       package.location,
                       style: TextStyle(
-                        color: Colors.grey, fontSize: 13
+                        color: commonLightBlackColor, fontSize: smallTextFontSize
                       ),
                     )
 
@@ -84,8 +85,8 @@ class HomeRecommendPackageCard extends StatelessWidget {
                     ),
                     SizedBox(height: 4),
                     Text(
-                      '(${package.review} reviews)',
-                      style: TextStyle(color: Colors.grey, fontSize: 13),
+                      ' (${package.review} reviews)',
+                      style: TextStyle(color: commonLightBlackColor, fontSize: smallTextFontSize),
                     ),
                   ],
                 )
@@ -102,12 +103,12 @@ class HomeRecommendPackageCard extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
-                  color: Colors.blue,
+                  color: primaryBackgroundColor,
                 ),
               ),
               Text(
                 '/Person',
-                style: TextStyle(color: Colors.grey, fontSize: 12),
+                style: TextStyle(color: commonLightBlackColor, fontSize: smallTextFontSize),
               ),
             ],
           )

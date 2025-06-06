@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/data_model.dart';
 
 import 'package:travel_in_chiangmai/widgets/home_recommend_package_card.dart';
@@ -18,17 +19,18 @@ class HomeRecommendPackageSection extends StatelessWidget {
     return Column(
   crossAxisAlignment: CrossAxisAlignment.start,
   children: [
+    SizedBox(height: 40),
     Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 1),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: const [
           Text(
-            "Recomended package for you",
+            "Recomended Packages",
             style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-              color: Colors.black,
+              fontSize: sectionTitleFontSize,
+              fontWeight: textFontWeight,
+              color: commonBlackColor,
             ),
           ),
           Text(
@@ -42,7 +44,7 @@ class HomeRecommendPackageSection extends StatelessWidget {
     ListView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(), // disable internal scroll
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       itemCount: recommendPackage.length,
       itemBuilder: (context, index) {
         return HomeRecommendPackageCard(package: recommendPackage[index]);

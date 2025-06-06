@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:travel_in_chiangmai/blocs/location_cubit.dart';
+import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/widgets/home_location_row.dart';
 
 class HomeLocationDropdown extends StatelessWidget {
@@ -20,9 +21,9 @@ class HomeLocationDropdown extends StatelessWidget {
               Text(
                 selectedLocation,
                 style: const TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 18,
-                  color: Colors.black,
+                  fontWeight: textFontWeight,
+                  fontSize: normalTextFontSize,
+                  color: commonBlackColor,
                 ),
               ),
               const Icon(

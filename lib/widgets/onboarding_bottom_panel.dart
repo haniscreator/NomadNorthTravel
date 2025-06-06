@@ -51,7 +51,7 @@ class OnboardingBottomPanel extends StatelessWidget {
                           blurRadius: 10,
                         ),
                       ],
-                      color: Colors.teal,
+                      color: primaryBackgroundColor,
                     ),
                     child: const Center(
                       child: Row(
@@ -82,20 +82,21 @@ class OnboardingBottomPanel extends StatelessWidget {
                     children: [
                       const TextSpan(
                         text: "already have account? ",
-                        style: TextStyle(fontSize: 16),
+                        style: TextStyle(fontSize: normalTextFontSize),
                       ),
                       TextSpan(
                         text: "Login",
                         style: const TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
+                          color: textLinkColor,
+                          fontWeight: textFontWeight,
+                          fontSize: normalTextFontSize,
                         ),
                         recognizer: loginRecognizer,
                       ),
                     ],
                   ),
                 ),
+                const SizedBox(height: 40),
               ],
             ),
           ),

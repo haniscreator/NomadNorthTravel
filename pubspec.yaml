@@ -47,7 +47,7 @@ dependencies:
   flutter_swiper_view: ^1.1.8
   dotted_line: ^3.2.2
   flutter_launcher_icons: ^0.14.3
-
+  lottie: ^3.3.1
 
 
 dev_dependencies:
@@ -91,8 +91,7 @@ flutter:
     - assets/images/reviews/
     - assets/images/onboarding/
     - assets/images/others/
-    - assets/lotties/  
-
+    - assets/lotties/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
