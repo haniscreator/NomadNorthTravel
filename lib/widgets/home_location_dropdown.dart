@@ -10,26 +10,31 @@ class HomeLocationDropdown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return BlocBuilder<LocationCubit, String>(
       builder: (context, selectedLocation) {
         return GestureDetector(
           onTap: () => showLocationDropdown(context),
           child: Row(
             children: [
-              const Icon(Iconsax.location, color: Colors.black),
+              Icon(
+                Iconsax.location,
+                color: theme.iconTheme.color ?? Colors.black,
+              ),
               const SizedBox(width: 5),
               Text(
                 selectedLocation,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: textFontWeight,
                   fontSize: normalTextFontSize,
-                  color: commonBlackColor,
+                  color: theme.textTheme.bodyLarge?.color ?? Colors.black,
                 ),
               ),
-              const Icon(
+              Icon(
                 Icons.keyboard_arrow_down,
                 size: 30,
-                color: Colors.black26,
+                color: theme.iconTheme.color?.withOpacity(0.5) ?? Colors.black26,
               ),
             ],
           ),
@@ -38,3 +43,46 @@ class HomeLocationDropdown extends StatelessWidget {
     );
   }
 }
+
+
+
+// import 'package:flutter/material.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:iconsax/iconsax.dart';
+// import 'package:travel_in_chiangmai/blocs/location_cubit.dart';
+// import 'package:travel_in_chiangmai/const/const.dart';
+// import 'package:travel_in_chiangmai/widgets/home_location_row.dart';
+
+// class HomeLocationDropdown extends StatelessWidget {
+//   const HomeLocationDropdown({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return BlocBuilder<LocationCubit, String>(
+//       builder: (context, selectedLocation) {
+//         return GestureDetector(
+//           onTap: () => showLocationDropdown(context),
+//           child: Row(
+//             children: [
+//               const Icon(Iconsax.location, color: Colors.black),
+//               const SizedBox(width: 5),
+//               Text(
+//                 selectedLocation,
+//                 style: const TextStyle(
+//                   fontWeight: textFontWeight,
+//                   fontSize: normalTextFontSize,
+//                   color: commonBlackColor,
+//                 ),
+//               ),
+//               const Icon(
+//                 Icons.keyboard_arrow_down,
+//                 size: 30,
+//                 color: Colors.black26,
+//               ),
+//             ],
+//           ),
+//         );
+//       },
+//     );
+//   }
+// }
