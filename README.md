@@ -43,6 +43,8 @@ All images are stored locally under the `assets/images/` directory and reference
 | ![](assets/screenshots/w13.png) | ![](assets/screenshots/w14.png) |  |![](assets/screenshots/w14.png) |
 
 
+
+
 ## 💡 Inspiration
 
 The app is inspired by the idea of digital nomad travel in Northern Thailand — peaceful mountains, rich culture, and eco-tourism experiences.
