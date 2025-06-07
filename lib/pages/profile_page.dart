@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'package:travel_in_chiangmai/animations/glow_avatar.dart';
+import 'package:travel_in_chiangmai/animations/slidein_fadein_gallery_images.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -48,10 +51,9 @@ class ProfilePage extends StatelessWidget {
                   right: 0,
                   child: Column(
                     children: [
-                      const CircleAvatar(
-                        radius: 50,
-                        backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                      ),
+                      
+                      const GlowAvatar(),
+
                       const SizedBox(height: 12),
                       const Text(
                         'P.Han',
@@ -131,9 +133,9 @@ class ProfilePage extends StatelessWidget {
                 (context, index) {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.asset(
-                      'assets/images/gallery/${index + 1}.jpg',
-                      fit: BoxFit.cover,
+                    child: SlideInFadeInGalleryImage(
+                      imagePath: 'assets/images/gallery/${index + 1}.jpg',
+                      delay: Duration(milliseconds: 400 * index), 
                     ),
                   );
                 },

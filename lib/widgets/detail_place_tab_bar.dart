@@ -10,19 +10,22 @@ class DetailPlaceTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return SliverPersistentHeader(
       pinned: true,
       delegate: _StickyTabBarDelegate(
         TabBar(
-          controller: tabController, // ✅ FIXED HERE
+          controller: tabController,
           tabs: const [
             Tab(text: "Overview"),
             Tab(text: "Review"),
           ],
-          indicatorColor: Colors.blue,
-          labelColor: Colors.black,
-          unselectedLabelColor: Colors.grey,
+          indicatorColor: theme.colorScheme.primary,
+          labelColor: theme.textTheme.bodyLarge?.color,
+          unselectedLabelColor: theme.textTheme.bodyLarge?.color?.withAlpha(153),
         ),
+        backgroundColor: theme.appBarTheme.backgroundColor ?? theme.colorScheme.surface,
       ),
     );
   }
@@ -30,8 +33,9 @@ class DetailPlaceTabBar extends StatelessWidget {
 
 class _StickyTabBarDelegate extends SliverPersistentHeaderDelegate {
   final TabBar tabBar;
+  final Color backgroundColor;
 
-  _StickyTabBarDelegate(this.tabBar);
+  _StickyTabBarDelegate(this.tabBar, {required this.backgroundColor});
 
   @override
   double get minExtent => tabBar.preferredSize.height;
@@ -42,7 +46,7 @@ class _StickyTabBarDelegate extends SliverPersistentHeaderDelegate {
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Container(
-      color: Colors.white,
+      color: backgroundColor,
       child: tabBar,
     );
   }

@@ -1,4 +1,3 @@
-// lib/widgets/onboarding_dots.dart
 import 'package:flutter/material.dart';
 import 'package:travel_in_chiangmai/models/data_model.dart';
 

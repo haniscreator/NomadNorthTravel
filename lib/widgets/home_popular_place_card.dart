@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_in_chiangmai/animations/popin_card_images.dart';
 import 'package:travel_in_chiangmai/const/const.dart';
 import 'package:travel_in_chiangmai/models/data_model.dart';
 
@@ -45,10 +46,10 @@ class HomePopularPlaceCard extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
-                // Image
-                Image.asset(
-                  place.image![0],
-                  fit: BoxFit.cover,
+            
+                PopInCardImages(
+                  imagePath: place.image![0],
+                  delay: Duration(milliseconds: 150), // 100ms staggered delay
                 ),
       
                 // Overlay with text and icons

@@ -23,7 +23,6 @@ const isShowDescOnboarding = false;
 
 
 const primaryBackgroundColor = Color(0xFF26A69A); //Colors.teal[400]
-//const Color pageBackgroundColor = Color.fromARGB(255, 225, 226, 227);
 final Color pageBackgroundColor = Colors.grey.shade200;
 const textLinkColor = Colors.blue; 
 const textFontWeight = FontWeight.w600;
