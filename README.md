@@ -40,7 +40,7 @@ All images are stored locally under the `assets/images/` directory and reference
 |  |  |  |
 | ![](assets/screenshots/w10.png) | ![](assets/screenshots/w11.png) | ![](assets/screenshots/w12.png) |
 |  |  |  |
-| ![](assets/screenshots/w13.png) | ![](assets/screenshots/w14.png) |  |
+| ![](assets/screenshots/w13.png) | ![](assets/screenshots/w14.png) |  |![](assets/screenshots/w14.png) |
 
 
 ## 💡 Inspiration
