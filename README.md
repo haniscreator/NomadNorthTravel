@@ -29,6 +29,25 @@ This project was created to:
 
 All images are stored locally under the `assets/images/` directory and referenced in `pubspec.yaml`.
 
+## 📁 Folder Structure
+
+```
+lib/
+├── blocs/         # BLoC files ( Especially to control for theme switching )
+│
+├── animations/    # Dart files ( For Animations )
+│
+├── const/         # Dart file ( For constant value )
+│
+├── models/        # Data Models ( For Offline Data Model File )
+│
+├── pages/         # Pages ( For Screens )
+│
+├── widgets/       # Reusable UI components 
+│
+└── main.dart      # App entry point
+```
+
 ## 📷 Screenshots
 🤍 White Mode Screens 🤍 
 |  |  |  |
