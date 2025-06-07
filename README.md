@@ -30,6 +30,7 @@ This project was created to:
 All images are stored locally under the `assets/images/` directory and referenced in `pubspec.yaml`.
 
 ## 📷 Screenshots
+🤍 White Mode Screens 🤍 
 |  |  |  |
 |----------|----------|----------|
 | ![](assets/screenshots/w1.png) | ![](assets/screenshots/w2.png) | ![](assets/screenshots/w3.png) |
@@ -40,8 +41,16 @@ All images are stored locally under the `assets/images/` directory and reference
 |  |  |  |
 | ![](assets/screenshots/w10.png) | ![](assets/screenshots/w11.png) | ![](assets/screenshots/w12.png) |
 |  |  |  |
-| ![](assets/screenshots/w13.png) | ![](assets/screenshots/w14.png) |  |![](assets/screenshots/w14.png) |
+| ![](assets/screenshots/w13.png) | ![](assets/screenshots/w14.png) |  |
 
+🖤 Dark Mode Screens 🖤
+|  |  |  |
+|----------|----------|----------|
+| ![](assets/screenshots/d1.png) | ![](assets/screenshots/d2.png) | ![](assets/screenshots/d3.png) |
+|  |  |  |
+| ![](assets/screenshots/d4.png) | ![](assets/screenshots/d5.png) | ![](assets/screenshots/d6.png) |
+|  |  |  |
+| ![](assets/screenshots/d7.png) | ![](assets/screenshots/d8.png) | ![](assets/screenshots/d9.png) |
 
 
 
