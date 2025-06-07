@@ -30,13 +30,17 @@ This project was created to:
 All images are stored locally under the `assets/images/` directory and referenced in `pubspec.yaml`.
 
 ## 📷 Screenshots
-|  |  |  |
+|  | White Mode Screens  |  |
 |----------|----------|----------|
-| ![](assets/screenshots/screen1.png) | ![](assets/screenshots/screen2.png) | ![](assets/screenshots/screen2.png) |
+| ![](assets/screenshots/w1.png) | ![](assets/screenshots/w2.png) | ![](assets/screenshots/w3.png) |
 |  |  |  |
-| ![](assets/screenshots/screen4.png) | ![](assets/screenshots/screen5.png) | ![](assets/screenshots/screen6.png) |
+| ![](assets/screenshots/w4.png) | ![](assets/screenshots/w5.png) | ![](assets/screenshots/w6.png) |
 |  |  |  |
-| ![](assets/screenshots/screen7.png) | ![](assets/screenshots/screen8.png) | ![](assets/screenshots/screen9.png) |
+| ![](assets/screenshots/w7.png) | ![](assets/screenshots/w8.png) | ![](assets/screenshots/w9.png) |
+|  |  |  |
+| ![](assets/screenshots/w10.png) | ![](assets/screenshots/w11.png) | ![](assets/screenshots/w12.png) |
+|  |  |  |
+| ![](assets/screenshots/w13.png) | ![](assets/screenshots/w14.png) |  |
 
 
 ## 💡 Inspiration

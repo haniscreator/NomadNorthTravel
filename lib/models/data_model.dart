@@ -155,7 +155,7 @@ class AllPackages {
 List<AllPackages> allPackage = [
   AllPackages(
     id: 1,
-    name: "Chiang Mai City Tour 1",
+    name: "Chiang Mai City Tour",
     category: 'Recommend',
     image: [
       'assets/images/packages/22.jpg',
