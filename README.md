@@ -84,5 +84,8 @@ I got some design inspiration and reference ideas from those videos, but I took 
 
 
 ---
+Buy A Coffee
 
-Feel free to fork, explore, or build upon this for your own learning.
+Feel free to fork, explore, or build upon this for your own learning. 
+Enjoyed this? A little coffee goes a long way ☕😊
+https://buymeacoffee.com/han.is.creator
